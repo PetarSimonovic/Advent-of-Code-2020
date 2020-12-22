@@ -620,54 +620,131 @@ acc +0
 jmp +1
 jmp +1".split("\n")
 
-
-@commands = []
-@loop_checker = []
-@line = 0
+def set_variables
+  @jmp_count = 0
+  @nop_count = 0
+  @jump_checker = 0
+  @nop_checker = 0
+  @jmp_complete = 0
+  @nop_complete = 0
+  @loop_checker = []
+  @line = 0
+  @com_count = 0
+  @counter = 0
+  @accumulator = 0
+  loop_count = 0
+  jmp_counter
+  nop_counter
+end
 
 
 def build_code
+  @commands = []
   @input.each do |command|
     builder = command.split(" ")
     @commands.push(builder)
   end
 end
 
+@origin = @commands
+
 def code_runner
-  @accumulator = 0
-  loop_count = 0
-  loop do
+  set_variables
+  until @line >= @commands.length do
+    ## puts "#{@line} #{@commands.length}"
     code_reader
-    puts "accumulator: #{@accumulator}"
+    puts "Accumulator: #{@accumulator}"
   end
 end
 
 def code_reader
   loop_check
-  print @commands[@line]
   operation, argument = @commands[@line]
   if operation == "nop"
-    puts operation
     @line += 1
   elsif operation == "acc"
-    puts operation
-    puts argument.to_i
     @line += 1
     @accumulator += argument.to_i
   elsif operation == "jmp"
-    puts operation
     @line += argument.to_i
   end
 end
 
 def loop_check
-  puts "line is #{@line}"
-  puts @loop_checker
   if @loop_checker.include? @line
-    puts "Final accumulator: #{@accumulator}"
-    exit
+    change_code
   else
     @loop_checker.push(@line)
+  end
+end
+
+def change_code
+  @commands.clear
+  build_code
+  ## puts "fresh commands"
+  ## @commands.each do |command, argument|
+  ##  puts command
+  ## end
+  if @jump_checker <= @jmp_complete
+    @jump_checker += 1
+    change_jmp
+  elsif @nop_checker <= @nop_complete
+    @nop_checker += 1
+    change_nop
+    exit
+  end
+  @loop_checker.clear
+  @accumulator = 0
+  @line = 0
+end
+
+def change_jmp
+  @counter = 0
+  @commands.each do |operation, argument|
+  ##  puts "#{@counter}, #{@jmp_count}"
+    if operation == "jmp" && @counter == @jmp_count
+      operation.replace "nop"
+      puts "JMP changed"
+      @jmp_count += 1
+      @counter = 0
+    ##  puts @commands
+      break
+    elsif operation == "jmp" && @counter != @jmp_count
+      @counter += 1
+    end
+  end
+end
+
+def change_nop
+  @counter = 0
+  @commands.each do |operation, argument|
+  ##  puts "#{@counter}, #{@nop_count}"
+    if operation == "nop" && @counter == @nop_count
+      operation.replace "jmp"
+      puts "NOP changed"
+      @nop_count += 1
+      @counter = 0
+  ##    puts @commands
+      break
+    elsif operation == "nop" && @counter != @nop_count
+      @counter += 1
+    end
+  end
+end
+
+def jmp_counter
+  @commands.each do |operation, argument|
+    if operation == "jmp"
+      @jmp_complete += 1
+    end
+  end
+end
+
+def nop_counter
+  @commands.each do |operation, argument|
+    if operation == "nop"
+      @nop_complete += 1
+    end
   end
 end
 
