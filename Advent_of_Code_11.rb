@@ -1,13 +1,94 @@
-@input = "L.LL.LL.LL
-LLLLLLL.LL
-L.L.L..L..
-LLLL.LL.LL
-L.LL.LL.LL
-L.LLLLL.LL
-..L.L.....
-LLLLLLLLLL
-L.LLLLLL.L
-L.LLLLL.LL".split("\n")
+@input = "LLLLLLLLLLLL.LLLLLLLLLL.LLLL.LLLL.LLLLLLLLLLL.LLLL.LLLLLLL.LL.LLLLLLLL.LLL.LLLLLLLLLLL.LLLLLLL
+LLLLLLLLLLL.LLLL.L..LLL.LL.LLLLLLLLLLL.LLLLLL.LLLLLLLL.L.LLLLL.LLLLLL..LLL.LLLLLLLLLLLLLLLLLLL
+LLLLLL.LLLL.LLLL.L.LLLL.LLL.LLLLLLLLLLLLLLLLL.LLLLLLLLLLLLLLL..LLLLLLLLLLLLLLLLLLLLLLLLLLL.LLL
+LLLLLLLLLLL.LL.LL..LLLL.LLLL.L.LLLLLLL.LLLLLL.LLLLLLLLLLLLLLL.LLLLLLLL.LLLLLLLL.LLLLLLLLLLLLLL
+LLLL.L.L.L..LLLLLLLLLL..LLL..LLLL.LLLL.LLLLLLLL.LLLLLL.LLLLLL.LLLLLLLLLLLLLLL.L.LLLLLLLLLLLLLL
+LLLLLL.LLLL.LLLLLL.LLLL.LLLL.LL.LLLLLL.LLLLLLLLLLLLLLL.LLLLLL.LLLLLLLL.LLL.LLLL.LLLLLLL.LLLLLL
+.L.L....LL......LL..LL.....LLLLL.......L....LL......L.L..L..L..L.L.LL.....LL.......L.L....L..L
+LLLLLL.LLLL.LLLLLL.LLLL.LLLLLLLLLLLLLL.LLLLLL.LLLLLLLL.LLLL.L.LLLLLLLLLLLLLLLLL.LLLLLLLLLLLLLL
+LLLLLL..LLL.LLLLLLLLLLLLLLLLLLL.LLLLLLLLLLLLL..LLLLLLL.LLLLLL.LLLLLLLL.LLLLLLLLLLLLLLL.LL.LLLL
+LLLLLL.LLLL.LLLLLL.L.LL.LLLL.LLLLLLLLL.LLLLLLLLLLLL.LL.LLLLLLLLLL..LLLLLL.LLLLLLLLLLLLLLLLLLLL
+LL..LL.LLLL.LLLLLL.LLLLLL.LL.LLLLL.LLLLLLLLLL.LLLLLLLLLLLLLLL.LL.LLLLL.LLLLLLLLLLLLLLLLLLLLLLL
+L......LLLLL.L....LL...L..........L..L...L.......LL.L.L.L........L......L..L...L...LL.LL...LL.
+LLLLLL.L.LL.LLLLLL.LLLLLLLLL.LLLLLLLLLLLLLLLL.LLLLLLLL.LLLLLL..LLL.LLL.LLLLLLLLLLLLLLLLLLL.LLL
+.LLL.L.LLLL.L.LLLLL.LLL.LLLL.LLLLLLL.LLLLLLLL.LLLLLLLLLL.LLLL.LLLLLLLLLLLLLLLL.LLLLLLLLLLLLLLL
+LLLLLL.LLLLLLLLL.LLLLLL.LLLLLLLLLLLLLL.LL.LLL.LLLL.LLL.LLLLLL..LLL.LLL.LL.LLL.L..L.LLLL.LLLLLL
+LLLLLL.LLLL.LLLLLLLLLLLLLLLLL.LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL.LLLLLLLLLLLLLLLLLLLLLLLLLLLLL.LL
+LLLLLL.LLLLLLLLLLLLLLLLLLLLL.LLLLLLLLL..LLLLL.LL.LLLLL.LLLLLL.LLLLLLLLLLLLLLLLLLLLLLLLLL.LLLLL
+LLLLLL.LLLL.LLLLLL.LLLLLLLLL.LLLLLLLLL.LLLLLL.LLL.L.LL.LLLLLL..LLLLLLL.LLLLLLLL.LLLLLLLLLLLLLL
+LLLLL..LL.L.LLLLLL.LLLL.LLLL.LLLLLLLLL.LLLLLLLLLLLLLLL.LLL.LL.LLLLLLLL.LLLLLLLLLLLLLLLLLL.LLLL
+LLLLLL.LLLL.LLLLLL.LLLL.LLLL.LLLLLLLLL.LLLLLL.LLLLLLLL.LLLL.LLLLLLLL.LLLLLLLLLLLLLLLLLLLLLLLLL
+.LL.......L.LL.L.L.........L..L...L..LL..L.....LL...LLLL.......L.........L.L..L...L.LL.LL...L.
+LLLLLL.LLLLLLLLLL..LLLLLLLLL.LLLLLLLLL.LL.LLLLLLLLL.LL.LLLLLLL.LLLLLLL.LLLLLLLL.LLLLLLLLLLLLLL
+LLL.LL.LLL..LLLLLL.LLLLLLLLL.LLLLLLLLL.LL.LLL.LLLLLLLL.LLLLLL.LLLLLLLL.LL.LLLLL.LLLLLLLLLLLLLL
+LLLLLL.LLLLLLLLLLL.LLLL.LLLLLLLLLLLLLL..LLL.L.LLLLLLLL.LLLLLLLLLLLLLLL.L...LLLL.LLLLLLLLLL.LLL
+LLLLLLLLLLLLLLLLLL.LLLL..L.L.LLLLL.LL..LLLLLL.LLLLLLLL.LLLLLL.LLLLLLLLLLLLLLLLL.LLLLLLL.LLLLLL
+LLLLLLLLLLL.LLLLLLL.LLLLLLLL.LLLLLLLLL.LLL.LL.LLLL.LLL.LLLLLL.LLLLLLL..LLLLLLLLLLLLLLLLLL.LLLL
+LLLLLLLLLLL.LLLLLL.LLLLLLLLL.L.LLLLLLLLL.LLLL.LLLLLLL..LLLLLLLLLLLLLLL.LLLLLLLL.LLLLLLLLLLLLLL
+LLLLLLLLL.L.LLLLLLLLLLLLLLLL.LL.LLL.LL.L.LLLL.LLLLLLLLL.LLLLLLLLLLLLLL.LLLLLLLL.LLLLLLLLLLLLLL
+LLLLLL.LLLL.LLLLLLLLL.L.LLLL.LLLLLLLLL.LLLLLL.LLLLLLLL.LLLLLL.LLLLLLLL.LLLLLLL.LLLLLLLLLLLLLLL
+LLLLLL.L.LL.LLLLLL.LLLLLLLLL.LLLLLLLLL.LLLLLL..LLLLLLL.LL.LLL.LLLLLLLLLLLLLLLLLLLL.LLLLLLLLLLL
+.L........LL..L..LLL.LL.LL..L.....L..L........LL.LL.L..L.L..LL.L......L..L.L..L.L...L..L....L.
+LLLLLL.LLL.LLLL.LLLLLLL.LLL.L.LL.LLLLL.LLLLLLLLLLLLLLL.LLLLLL.LLLLLLLL.LLLLLLLLLLLLLLLLLLLLLLL
+LLLL.LLLLL.LLLLLLL.LLLL.LLLLLLLLLLLLLL.LLLLLLLLLLLLLLLLLLLLLLLLLLLLL.LLLLLLLLLL.LLLLLLL.LLLLLL
+LLLLLL..LLLLLLLLLL.LLLLLLLLL.L.LLLLLLL.LLLLLLLLLLLLLLL.LLLLLLLLL.LLLLL...LLL.LLLLLLLLLLLLLLLLL
+LLLLLLLLLLLLLLLLLL.LLLL.LLLL.LLLLLLLLLL.LLLL..LLLLLLLL.LLLLLLLLLLLLLLL.L.LLLLLL.LLLLLLLLLLLLLL
+LLLLLLLLLLL.LLLLLLLLLLL.L.LL.LLLLLLLLL.LLLLLL.LLLLLLLL.LLLLLLLLLLLLLLLLLLLLLLLL.LLLLLLLLLLLLLL
+LLLLLLLLLL..LLLLLL.LLLL.LLLLLLLLLLLLLL.LL.LLL.LL.LLLLL.LLLLLL.LLLLLLLLL.LLLLLLL.LLLLLLL.LLLLLL
+LLL.LL.LLLLLLLL.LL.LLLL.LLLL.L.LLLLLLLLLLLLLL.LLLLLLLL.L.LLLL.LLLLLLLL.LLLLLLLLLLLLLLLLLLLLLLL
+....LL.....L..L.L..L.....LLL....LL.LL.L............L..LL.....LL..LL..L....L..L.L.L........LL..
+LLLLLL.LLLL.LLLLLL.LLLLL.LLL.LLLLLLLLL.LLLLLL.LLLLLLLL.LLLLLL.LLLLLLLL.L.LLLLLL.LLLLLLLLLLLLLL
+LLLLLL.LLLL.LLL.LLLLLLL.LLLLLLLLLLL.LL.LLLLLL.LLL.LLLLLLLLLLL.LLLLLLLL.LLLL.LLLLLLLLLLLLL.LLLL
+LLLL.LLLLLLLLLLL.L..LLLLLLLLLLLL.LLLLL.LLLLLL.LLLLLLLL.LLLLLL.LLLL.LL..LLLLLLLL.LLLLLLLLLLL.LL
+LLLLLL.LLLLLLLLLLL.LLLL.LLLL.LLLLLLLL..LLLLL..LLLLLLLLLL.LLL.LLLLLLLLLLLLLLLLLL.LLLLLLLLLLLLLL
+LLLLLL.LLLL.LLLLLL.LLLLLLLLLLLLLLLL..L.LL.LLL.LLLLLLL.LLLLLLLL.LLLLLLL.LLL.LLLLLLLLLLLLLLLLLLL
+LLLLLL.LLLL.L.LLLL.LLLLLLL.L.LLLL.LLLLLLL.LL..LLLLLLLL.LLLLLL.LLL.LLLL.LL..LLLL.LLLLLLLLLLL.LL
+LLLLLL.LLLL.LLLLLL.LLLLLLL.L.L.LLLLL.L.LLLLLLLLLLLLLLLLLLLLLL.LLLLLL.L.LL.LLLLL.LLLL.LLLLLLLLL
+.LLL....L.LLLL..L.LL.......LL.L...LL.L...LL....L..L..L..LLLL....L....L..L...L....L...L.LL.....
+LLLLLL.LLLL.LLLLLL.LLLLLLLLLLLLL.LLLLL..LLLLL.LLLLLL.LLLLLLLLLL.LLLLLLLLLLLLLLLLLL.LLLLLLLLLLL
+LLLLL..LLLLLLLLLLL.LLLL.LLLLLLLLLLLLLLLLLLLLL.LLLLLLLL.LLLLLL.LLLLLLLLLLLLL.LLL.LLLLLLLLLLLLLL
+..LL.LLLL.LL.LLLLL.L.LL.LLLL.LLLLLLLLLLLLLLLL.LLLLLLLLLLLLLLL.LLLLLLL..LLLLLLLL.LLLLLLLLL.LL.L
+LLLLLL..LLL.LLLLLL.LLLLLLLLL.LLLLLLLLL.LLLLLL.LLLL.LLL.LLLLLL.LLLLLLLL.LLLLLLLLLLLLLLLLLLLLLLL
+LLLLLLLLLLL.LLLLLLLLLLL.LLLLLLLLLLLLLL.LL.LLL.LLLLLLLL.LLLLLL.LLLLLLLL.LLLL.L.LLLLLLLLLLLL.LLL
+LLLLLLLLLLLL.LL.LL.LLLL.LLLL.L.LL.L.LLLLLLL.L.LLLLLLLL.LLLLLL.LLLL.LLL.LLLLLLLL.LLLLLLLLLLLLLL
+......L...L....L..............L.L....L..L.LL.L..LL....LLL........L..LL.L..L.L.LLL.........L.L.
+LLLLLL.LLLL.LLLLLL.L.LL.LLLL.LLLL.LLLLLL.LLLL.LLLLLLLL.LLL.LL.LLLLLLLL.LL.LLLLLLLLLLLLLLLLLLLL
+LL.LLLLLLLLL.LLLLLLLLLL.LLLL.LLLLLLLLL.LLLLLLLLLLLLLLL.LLLL.L.LLLLLLLL.LLLLLLLLLLLLLL.LLLLLL.L
+LLLLLL.LLLL.LLLLLL.LLLL.LLLL.LLLLLLLLL.L.LLLL.LLLLLLLL.LLLLLLLLLLLLLLL.LLLLLLLL.LLLLLLLLLLLLLL
+L.LLLLLLLLLLLLLLLL.LLLLL.LLLLLLLL.LLLL.LLLLLL.LLL.LLLL.LLLLLL.LLLLLLLL.LLLLLLLLLLL..LLLL..LLLL
+LL.LLL.LLLLLLLLLLL.LLLLLLLLL..LLLLLLLL.LLLLLL.LLLL..LL.LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL.LL
+LLLLLLLLLLLLLLLLLLLLLL..LLLL.LLLLLLLLLLLLLLLLLLLLLLLLL.LLLLLL.LLLLLLLLL.LLLLLLL.LLLLLLLLLLLLLL
+LLLLLLLLL.L..LLLLLLLLLL.LLLLLLLLLLLLLL.LLLLLL.LLLL.LLLLLLLLLL.LLLLLLLL.LLLLLLLL.LLLLLLLLLLLLLL
+LLLL.L.LLLL.LLLL.L.L.LLLLLLL.LLLLLLLLLLLL.LLL.LLLLLLLL..LLLLLLLLLLLLLL.LLLLLLLLLLLLLLLLL.LLLLL
+LLL.LL.LLLL.LLLLLLLLLLL.LLLLLLLLLLLLLL.LLLLLLLLLLLLLLL.LLLLLL.LLLLLLLLLLLLL.LLL.LLLLLLLLLLLLLL
+.L.......L..L...L..LL......L..L..L..L...L.L........LLL......L......LL.....L.L......L.L.LL....L
+LLLLLLLLLLLLLLLLLL.LLLLLLLLLLLLLLLLLLL.LLLLLL.LLLLLLLL.LLLLLL.LLLLLLLL.LLLLLLLL.LLLLLLL.LLLLLL
+LLLL.LLLLLLLLLLLLLLLL..LLLLL.LLLLLLLLL..LLLLL.LLLLLLLL.LLLLLLLLLLLLL.L.LLLLLLLLLLLLLLLLLLLLLLL
+.LLLLL.LLLL.LL.LLL.LLLL.LLLL.LLLLLLLLL.LLLL.L.LLLLLLLLLLLLLLLLLLLLLLLL.LLLLLLLLLLLLLLLLLLLLLLL
+LLLLLL.LLLL.LLLLLLLLLLLL.LLL.LLLLLLLLL.LLLLLL.LLLLLLLL.LLLL...LLLLLLLL.L.LLLLLLLLLLLLLLLLLLLLL
+LLLLLLLLLLL.LLLLLL.LLLLLLLLL.LLLL.LLLL.LL.LLL.LLLLLLLL.LLLLLL.LLLLLLLLLLLLLLLLL.LLLLLLLL.LLLLL
+......L.LLLL...LLL.L..L......L..L.L.L....L.......LLL....L..LLLL.LLL..LL..L.L.L........LLL.L...
+LLLLLL.LLLL.LLLLLL.LLLL.LLLL..LLLLLLLL.LLLLLL.LLLLLLLL..LLLLL.LLLLLLLL.LLLLLLLL.LLLLLLLLLLLLLL
+LLL.LL.LLLL.LLLLLL.LLLLLLLLL.LLLLLLLLL.LLLLLL.LLLLLLLL.LLLLLLLLLLLLLLL.LLLLLLLL.LLLLL.LLLLLLLL
+LLLLLL.LLLLLLLLLLLLLLLLLLLLL.LLLLLLLLL.LLLLLLLLLLLLLLL.LLLLLL.LLLLLLLL.LLLLLLLL.LLLLLLLLLLLLLL
+LLLLLL.LLLLLLLLLLLLLLLL.LLLL.LLLLLLLLL.LL.LLLLLLLLLLLLLLLL.LL.LLLLLLLL.LLLLLLLL.LLLLLLLLLLLLLL
+LLLLLL....L.LLLLLL.LLLL.LLL.LLLLLLLLLL.LLLLLL.LLLLLLLL.LLLLLL.LLLLL..L.LLLLLLLLLLLLLLLLLLLLL.L
+LLLLLLLL.LL.LLLLLLLLLLLLLL.L.LLLLLLLLL.LLLLLL..LLLLLLL.LLLLLLLL.LLLLLLLLLL.LLLL.LLLLLLLLLLL.LL
+LLLLLL.LLLLLLLLLLLLLLLL.LLLL.LLLLLLLLLLLLLL...LLLLLL.LLLLLLLL.LLLLLLLL.LLLLLLLLLLLLLLLLLLLLLLL
+.L..L....L.L..L..LL...L.L.LLLLLL...LLL.LL......LLL...L..LLLL.LLLLL.L...LLL...L.LL..L.L...L.L.L
+LLLLLL.LLL..LLLLLL.LLLL.LLLL.LLLLLLLLL.LLLLLLLLLLLLLLL..LLLLL.LLLLLLLL.LLLLLLLL.LLLLLLLLLLLLLL
+LLLLLL.LLLL.LLLLLLLLLLL.LLLL.LLLLLLLLLLLLLLL..LLLLLLLL.LLLLLLLL.LLLLLL.LLLLLLLLLLLLLLLLLLLLLLL
+LLLLLL.LLLL.LLLLLLLLLLL.LLLL.LLLLLLLLL.LLLLLLLLLLLLL.LLLLLLLL.LLLLLLLL.LLLLLLL..LLLLLLLLLLLLLL
+LLLLLL.LLLL.LLLLLL.LLLLLLLLLLLLLLLLL.L.L.LLLL.LLLLLLLLLLLLLLL.LL.LLLLLLLLLLLLLL..LLLLLLLLLLLLL
+L.LLLL.LLLL.LLL.LLLLLLLLLLLL.LLLLLLLLL.LLLLL..LLLLLLLL.LLLLLL.LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+LLLLL.LLLLL.LLLL.L.LLLL.LLLL.LLLLL.LLL.LLLLLL.LLLLLLLLLLLLLLL.LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+LLLLLLLLLLLLLLLLLLLLLLLL.LLLLL.LLLLLLL.LLLLLL.LLLLLLLL.LLLLLL.LLLLLLLLLLLLLLL.LLLLLLLLLLLLLLL.
+L....L.....L..L......L....L.L...L.L.....L.L...LL......L....LL...L....LL...LL.......LLL...L.L.L
+LLLLLLLLLLL.LLLLLLLL.LL.LLL..LLLLLLLLL.LLLLLL.LLLLLLLL.LLLLLLLLLLLLLLL.LLL.LLLL.LLLLLLLLLLLLLL
+LLLLLLLLLLLLLLLLLLLLLLLLLLL..LLLLLLLLL.LLLLLL..LLLLLLL.LLLLLL.L.L.LLLLLLLLL.LLL.LLLLLLLLLLLLLL
+LLLLLL.LLLL.LLLLLL.LLLL.LL.LLLLLLLLLLL.LLLLLLLL.LLLLLL.LLLLL...LLLLLLLLLLLLLLLL.LLLLLLLLLLLLL.
+LLLLLL.LLLL.LLLLLL.LL.LLLLLL.LLLLLLLLLLLLLLLLLLLLLLLLL.LLLLLL.LLLLLLLL.LLLLLL.L.LLLLLLLLLLLLLL
+LLLLLL.LLLL.LLLLLLLLLLL.LLLL.LLLLL.LLLLLLLLLL.LLLLLLLL..LLLLL.LL.LLLLL.LLL.LL.L.LLLLLLLLLLLLLL".split("\n")
 
 @seats = []
 
@@ -26,165 +107,247 @@ L.LLLLL.LL".split("\n")
 
 
 def get_seats
+  @seats = Array.new
   @input.each do |row|
     seats = row.split("")
     @seats.push(seats)
     @width = seats.length
-    @seat_storage = []
   end
+  @seat_storage = Array.new
+  @input.each do |row|
+    seats = row.split("")
+    @seat_storage.push(seats)
+  end
+  @round = 1
+  @static = false
+end
+
+def set_variables
+  @x = 0
+  @y = 0
   @length = @seats.length - 1
+  @round += 1
+  @check_complete = false
+  @total_occupied = 0
+  @static = true
 end
 
 def analyse_seats
-  y = 0
-  @seats.each do |seat_row|
-    puts "Y #{y}"
-    x = 0
-    @length.times do
-      puts "x = #{x} : @length = #{@length}"
-      seat_row = @seats[y]
-      puts "Original: #{seat_row}"
-      @new_seat_row = seat_row
-      puts "#{@new_seat_row}"
-      @current_seat = @new_seat_row[x]
-      puts "Current seat: #{@current_seat}"
-      check_adjacent_seats(x, y)
-      change_seat
-      puts "Current seat has become: #{@current_seat}"
-      @new_seat_row[x] = @current_seat
-      puts "Changed: #{@new_seat_row}"
-      x += 1
-      puts
-    end
-    y += 1
-    @seat_storage.push(@new_seat_row)
+  until @check_complete == true do
+    @current_seat = @seat_storage[@y][@x]
+    #puts "--- CURRENT SEAT: round #{@round} - #{@current_seat}----"
+    #puts "--- coordinates: x - #{@x}, y - #{@y} ----"
+    #puts "--- #{@seats[@y]} ---"
+    #puts "--- #{@seat_storage[@y]} ---"
+    check_adjacent_seats
+    change_seat
+    update_seat_storage_map
+    check_coordinates
+    #puts
   end
 end
 
-def check_adjacent_seats(x, y)
+def check_coordinates
+   # puts "Checking coordinates - X: #{@x} Y: #{@y}"
+    # puts "width: #{@width} - length #{@length}"
+  @x += 1
+  if @x > @width - 1
+    @x = 0
+    @y += 1
+  end
+  if @y > @length
+    # puts "Y: #{@y}, #{@length}"
+    @check_complete = true
+  end
+end
+
+def check_adjacent_seats
   @occupied = 0
   @all_empty = true
-  top_left(x, y)
-  top(x, y)
-  top_right(x, y)
-  right(x, y)
-  down_right(x, y)
-  down(x, y)
-  down_left(x, y)
-  left(x, y)
-  puts @occupied
-  puts @all_empty
+  top_left
+  top
+  top_right
+  right
+  down_right
+  down
+  down_left
+  left
+  #puts @occupied
+  #puts @all_empty
 end
 
-def top_left(x, y)
-  unless y == 0 or x == 0
-    row_check = @seats[y - 1]
-    seat = row_check[x - 1]
-    puts "Top Left: #{seat}"
+def top_left
+  unless @y == 0 or @x == 0
+    row_check = @seats[@y - 1]
+    seat = row_check[@x - 1]
+    # puts "Top Left: #{seat}"
     check_seat(seat)
   end
 end
 
-def top(x, y)
-  unless y == 0
-    row_check = @seats[y - 1]
-    seat = row_check[x]
-    puts "Top: #{seat}"
+def top
+  unless @y == 0
+    row_check = @seats[@y - 1]
+    seat = row_check[@x]
+    # puts "Top: #{seat}"
     check_seat(seat)
   end
 end
 
-def top_right(x, y)
-  unless y == 0 || x >= @width
-    row_check = @seats[y - 1]
-    seat = row_check[x + 1]
-    puts "Top Right: #{seat}"
+def top_right
+  unless @y == 0 || @x >= @width
+    row_check = @seats[@y - 1]
+    seat = row_check[@x + 1]
+    # puts "Top Right: #{seat}"
     check_seat(seat)
   end
 end
 
-def right(x, y)
-  unless x > @width
-    row_check = @seats[y]
-    seat = row_check[x + 1]
-    puts "Right: #{seat}"
+def right
+  unless @x > @width
+    row_check = @seats[@y]
+    seat = row_check[@x + 1]
+    # puts "Right: #{seat}"
     check_seat(seat)
   end
 end
 
-def down_right(x, y)
-  unless x > @width || y > @length
-    row_check = @seats[y]
-    seat = row_check[x + 1]
-    puts "Down Right: #{seat}"
+def down_right
+  unless @x > @width || @y >= @length
+    row_check = @seats[@y + 1]
+    seat = row_check[@x + 1]
+    # puts "Down Right: #{seat}"
     check_seat(seat)
   end
 end
 
-def down(x, y)
-  unless y >= @length
-    row_check = @seats[y + 1]
-    seat = row_check[x]
-    puts "Down: #{seat}"
+def down
+  unless @y >= @length
+    row_check = @seats[@y + 1]
+    seat = row_check[@x]
+    # puts "Down: #{seat}"
     check_seat(seat)
   end
 end
 
-def down_left(x, y)
-  unless y >= @length || x == 0
-    row_check = @seats[y + 1]
-    seat = row_check[x - 1]
-    puts "Down Left: #{seat}"
+def down_left
+  unless @y >= @length || @x == 0
+    row_check = @seats[@y + 1]
+    seat = row_check[@x - 1]
+    # puts "Down Left: #{seat}"
     check_seat(seat)
   end
 end
 
-def left(x, y)
-  unless x == 0
-    row_check = @seats[y]
-    seat = row_check[x - 1]
-    puts "Left: #{seat}"
+def left
+  unless @x == 0
+    row_check = @seats[@y]
+    seat = row_check[@x - 1]
+    # puts "Left: #{seat}"
     check_seat(seat)
   end
 end
 
 def check_seat(seat)
   if seat == "#"
-    @all_empty == false
+    @all_empty = false
     @occupied += 1
   end
 end
 
 def change_seat
-  puts "Changing seat"
+  # puts "Changing seat"
   if @current_seat == "L"
     empty_seat_change
   elsif @current_seat == "#"
+    @total_occupied += 1
     occupied_seat_change
   end
 end
 
 def empty_seat_change
-  puts  "Empty seat change taking place"
+  # puts  "Empty seat change taking place"
   if @all_empty == true
     @current_seat = "#"
-    puts "Changing to occupied: current seat is #{@current_seat}"
+    @total_occupied += 1
+    @static = false
+    # puts "Changing to occupied: current seat is #{@current_seat}"
   end
 end
 
 def occupied_seat_change
-  puts "Occupied seat change taking place"
-  if @occupied >= 4
+  # puts "Occupied seat change taking place: occupied is #{@occupied}"
+  if @occupied > 3
     @current_seat = "L"
+    @total_occupied -= 1
+    @static = false
+    # puts "Changing to empty: current seat is #{@current_seat}"
   end
 end
 
 def show_seat_changes
+  puts "SEAT MAP UPDATE"
   @seat_storage.each do |new_row|
     puts "#{new_row}"
   end
+  puts
+  puts
 end
 
-get_seats
-analyse_seats
-show_seat_changes
+def update_seats
+  @seats = []
+  row = []
+  @check_complete = false
+  @x = 0
+  @y = 0
+  until @check_complete == true
+    if @seat_storage[@y][@x] == "#"
+      row.push("#")
+    elsif @seat_storage[@y][@x] == "L"
+      row.push("L")
+    else
+      row.push(".")
+    end
+    if @x == @width - 1
+      # puts "#{@x}, #{@width-1}"
+      @seats.push(row)
+    #  puts "ROW: #{row}"
+      row = []
+    end
+    check_coordinates
+  end
+end
+
+
+def update_seat_storage_map
+  @seat_storage[@y][@x] = @current_seat
+end
+
+def enter_passengers
+  # puts "SEATS - START ROUND"
+  # @seats.each do |seat|
+  #  puts "#{seat}"
+  # end
+  puts
+  set_variables
+  analyse_seats
+  # show_seat_changes
+  update_seats
+  # puts "SEATS - END ROUND"
+  # @seats.each do |seat|
+  #  puts "#{seat}"
+  # end
+  puts
+end
+
+def advent_11_part_1
+  get_seats
+  until @static == true do
+    puts "----- ROUND #{@round} -----"
+    puts
+    puts "Total #{@total_occupied}"
+    enter_passengers
+  end
+end
+
+advent_11_part_1
